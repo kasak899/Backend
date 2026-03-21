@@ -17,7 +17,7 @@ for file in *; do
       ;;
     *.jpg|*.png)
       mv -- "$file" Images/
-      ;;
+      ;;  
     *.txt)
       mv -- "$file" Text/
       ;;
