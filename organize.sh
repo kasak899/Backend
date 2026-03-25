@@ -6,7 +6,7 @@ ls
 
 
 mkdir -p PDFs Images Text
-
+ 
 for file in *; do
   
   [ -f "$file" ] || continue
