@@ -1,0 +1,14 @@
+<%- include("../partials/navbar") %>
+
+<h2>All Posts</h2>
+
+<% posts.forEach(post => { %>
+  <div>
+    <h3><%= post.title %></h3>
+    <p><%= post.content.substring(0, 100) %>...</p>
+    <a href="/post/<%= post._id %>">Read More</a>
+  </div>
+  <hr>
+<% }) %>
+
+<%- include("../partials/footer") %>
