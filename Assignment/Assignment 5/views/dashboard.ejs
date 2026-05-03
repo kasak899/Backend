@@ -1,0 +1,17 @@
+<h2>Welcome <%= user %></h2>
+
+<form action="/add" method="POST">
+    <input type="text" name="task" placeholder="New task" required />
+    <button>Add</button>
+</form>
+
+<ul>
+    <% todos.forEach((todo, index) => { %>
+        <li>
+            <%= todo %>
+            <a href="/delete/<%= index %>">Delete</a>
+        </li>
+    <% }) %>
+</ul>
+
+<a href="/logout">Logout</a>
